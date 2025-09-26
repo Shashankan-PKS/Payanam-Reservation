@@ -41,8 +41,6 @@ function Buseslists() {
 
     let navigate = useNavigate();
 
-    let {buses, setBuses} = useFetch()
-
 
     let {users } = useFetch("/userdatabase.json")
 
