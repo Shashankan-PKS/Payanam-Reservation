@@ -119,7 +119,7 @@ function Bookinglists() {
                                                 <TableCell>{user.price}</TableCell>
                                                 <TableCell style={{width : "fit-content"}}> 
                                                     <IconButton  style={{backgroundColor: "#0288d1", color: "whitesmoke"}} 
-                                                    onClick={() => {navigate(`/update-bus/${user.id}`) } } >
+                                                    >
                                                         <EditIcon sx={{"@media (max-width:650px)": {
                                                             transform: "scale(0.7)", // shrink icons
                                                             fontSize: "1.2rem",
@@ -128,7 +128,7 @@ function Bookinglists() {
                                                 </TableCell>
                                                 <TableCell style={{width : "fit-content"}}> 
                                                     <IconButton style={{backgroundColor: "crimson", color: "whitesmoke"}} 
-                                                    onClick={() => handleDelete(user.id)}>
+                                                    >
                                                         <DeleteIcon sx={{"@media (max-width:650px)": {
                                                             transform: "scale(0.7)", // shrink icons
                                                             fontSize: "1.2rem",

@@ -111,7 +111,7 @@ function Userlists() {
                                                 <TableCell>{user.phone}</TableCell>
                                                 <TableCell style={{width : "fit-content"}}> 
                                                     <IconButton  style={{backgroundColor: "#0288d1", color: "whitesmoke"}} 
-                                                    onClick={() => {navigate(`/update-bus/${user.id}`) } } >
+                                                     >
                                                         <EditIcon sx={{"@media (max-width:550px)": {
                                                             transform: "scale(0.7)", // shrink icons
                                                             fontSize: "1.2rem",
@@ -120,7 +120,7 @@ function Userlists() {
                                                 </TableCell>
                                                 <TableCell style={{width : "fit-content"}}> 
                                                     <IconButton style={{backgroundColor: "crimson", color: "whitesmoke"}} 
-                                                    onClick={() => handleDelete(user.id)}>
+                                                    >
                                                         <DeleteIcon sx={{"@media (max-width:550px)": {
                                                             transform: "scale(0.7)", // shrink icons
                                                             fontSize: "1.2rem",
