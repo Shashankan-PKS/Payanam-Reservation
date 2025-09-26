@@ -40,9 +40,8 @@ function Buseslists() {
     const [rowsPerPage, setRowsPerPage] = useState(5);
 
     let navigate = useNavigate();
-    
 
-    let {buses, setBuses} = useFetch("/database.json")
+    let {buses, setBuses} = useFetch()
 
 
     let {users } = useFetch("/userdatabase.json")
@@ -87,29 +86,19 @@ function Buseslists() {
         
     };
 
-    let handleAdd = (e) => {
+    let handleAdd = async (e) => {
         e.preventDefault();
-        fetch("/database.json", {
-            method : "POST",
-            headers : {
-                "Content-Type" : "application/json"
-            },
-            body : JSON.stringify( newBus )
-        })
-        .then(() => {
-            
-            setOpen(false);
-            setSOpen(true);
-        })
+        await addbus({ id: Date.now(), ...newBus})        
+        setOpen(false);
+        setSOpen(true);
+        
     }
 
-    let handleDelete = (id) => {
-        axios.delete(`/database.json/${id}`)
-        .then(() => {
-            setEOpen(true);
-        })
-        let newBusList = buses.filter(buslist => buslist.id !== id)
-        setBuses( newBusList );
+    let handleDelete = async (id) => {
+        await deleteBus(id);
+        setEOpen(true);
+        // let newBusList = buses.filter(buslist => buslist.id !== id)
+        // setBuses( newBusList );
     }
 
     const handleChangePage = ( event , newPage) => {

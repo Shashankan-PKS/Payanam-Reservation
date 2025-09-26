@@ -1,6 +1,6 @@
 import { Alert, Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, IconButton, Slide, Snackbar, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TextField } from "@mui/material"
 import React, { useEffect, useState } from "react";
-import useFetch from "../../customhook/useFetch";
+import useFetch from "../../customhook/useFetch.js";
 import Paper from '@mui/material/Paper';
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
@@ -8,27 +8,28 @@ import axios from "axios";
 
 function UpdateBuslist() {
 
+    const { buses, updateBus } = useFetch();
     const [uopen, setUOpen] = useState(true);
     const [sopen, setSOpen] = useState(false);
-    const [updateBus, setUpdateBus] = useState(null)
+    const [updatedBus, setUpdatedBus] = useState(null)
 
     let navigate = useNavigate();
 
     let {id} = useParams();
 
     useEffect( () => {
-        axios.get( `/bookingdatabase.json/${id}` )
-        .then( res => setUpdateBus(res.data))
-    },[] )
+        const bus = buses.find(b => b.id === Number(id));
+        if (bus) setUpdatedBus(bus);
+    },[buses, id] )
 
 
-    let {buses} = useFetch("/database.json")
+    
 
     let handleChange = (e) => {
 
         let {value , name } = e.target;
-        setUpdateBus({
-        ...updateBus,
+        setUpdatedBus({
+        ...updatedBus,
         [name] : value})
 
     }
@@ -41,19 +42,13 @@ function UpdateBuslist() {
 
     
 
-    let handleUpdate = (e) => {
+    let handleUpdate = async (e) => {
         e.preventDefault();
-        fetch(`/database.json/${id}`, {
-            method : "PUT",
-            headers : {
-                "Content-Type" : "application/json"
-            },
-            body : JSON.stringify( updateBus )
-        })
-        .then(() => {
-            setSOpen(true);
-            
-        })
+        const updatedBuses = buses.map(b => (b.id === Number(id) ? updateBus : b));
+        await updateBin({
+            buses: updatedBuses, 
+        });
+        setSOpen(true);    
     }
 
 
