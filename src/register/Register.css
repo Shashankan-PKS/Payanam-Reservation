@@ -1,0 +1,70 @@
+main{
+    /* background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%); */
+    background-image: url(../assets/photo.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: Poppins;
+}
+.regcontainer{
+    width: 50%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 350px;
+    height: fit-content;
+    border-radius: 10px;
+}
+.adlheader h4{
+    width: 100%;
+    text-align: center;
+}
+.form-control{
+    border: none;
+    outline: none;
+    background: rgba(197, 197, 197, 0.781) !important;
+    color: 2px solid black;
+}
+.button{
+    width: 100%;
+    background: #fbd0d9 ;
+    color: crimson;
+}
+.button:hover{
+    background: crimson !important;
+    color: white;
+}
+.lfoot{
+    padding-top: 10px;
+}
+.lfoot p a{
+    text-decoration: none;
+    color: crimson;
+}
+@media (max-width:850px){
+    .regcontainer{
+        width: 70%;
+        padding: 30px;
+        margin-left: 150px;
+    }
+}
+@media (max-width:580px){
+    .regcontainer{
+        width: 90%;
+        padding: 20px;
+        margin-left: 30px;
+    }
+    .lfoot p{
+        font-size: 12px;
+    }
+}
+@media (max-width:380px){
+    .regcontainer h4{
+        font-size: 12px;
+    }
+    .form-control input{
+        font-size: 15px;
+    }
+}

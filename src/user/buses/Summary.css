@@ -1,0 +1,139 @@
+.details{
+    padding: 20px;
+}
+.seating-area{
+    text-align: center;
+}
+.detailssum .grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+}
+.summary{
+    background-color: beige;
+    padding: 10px;
+}
+.selectseat{
+
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px ;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 10px;
+}
+.steering{
+    padding: 10px;
+    
+}
+.steering img{
+    width: 40px;
+}
+.inseat{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.armchair{
+    width: 24px;
+    height: 24px;
+}
+/* .seating-area{
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    margin: auto;
+}
+.bussuminfo{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.bussuminfo .details .businfields{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.bussuminfo .details .businfields .form-floating{
+    margin: 10px;
+}
+.bussuminfo .details .businfields .form-floating input{
+    background-color: white !important;
+}
+.bussuminfo .details .confirm{
+    width: 70%;
+}
+.seating-area .selectseat{
+    width: fit-content;
+    border-radius: 30px;
+    height: fit-content;
+}
+.steering{
+    margin-left: 200px;
+}
+.seats{
+    display: flex;
+}
+
+.selectseat img{
+    width: 40px;
+}
+.busseats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+@media (max-width : 900px){
+    .bussuminfo{
+        padding: 10px;
+    }
+    .bussuminfo .details .businfields{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width : 720px){
+    .bussuminfo .details .businfields{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .detailssum .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width : 570px){
+    .seating-area{
+        padding: 10px;
+        display: inline;
+        gap: 10px;
+    }
+    .detailssum .grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .steering{
+        padding: 5px;   
+    }
+    .steering img{
+        width: 25px;
+    }
+    .inseat {
+        width: 30px;
+        height: 30px;
+    }
+    .inseat .armchair{
+        width: 20px;
+        height: 20px;
+    }
+} 
+@media (max-width : 480px){
+    .inseat {
+        width: 20px;
+        height: 20px;
+    }
+    .inseat .armchair{
+        width: 12px;
+        height: 12px;
+    }
+}

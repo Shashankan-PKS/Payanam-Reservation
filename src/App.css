@@ -1,0 +1,56 @@
+main{
+    background: url(assets/photo.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+body {
+  padding-right: 0 !important;
+}
+
+.introcontainer{
+    width: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 25%;
+}
+.content{
+    padding: 30px;
+    color: whitesmoke;
+}
+.content h3{
+    padding: 20px;
+}
+.btn{
+    padding: 10px;
+}
+@media (max-width:780px){
+    .introcontainer{
+        width: 80%;
+        margin-left: 15%;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+}
+@media (max-width:580px){
+    main{
+        height: 100vh;
+    }
+    .introcontainer{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 300px;
+    }
+    .content{
+        padding: 15px;
+    }
+    .content h3{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+}

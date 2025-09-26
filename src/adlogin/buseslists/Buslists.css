@@ -1,0 +1,8 @@
+@media(max-width: 580px){
+    .busTable{
+        width: fit-content;
+    }
+    .adhome .totuser img{
+        width: fit-content;
+    }
+}

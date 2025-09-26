@@ -1,0 +1,18 @@
+.profcontainer{
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+}
+.profcontent{
+    padding: 20px;
+    background-color: rgb(56, 56, 56);
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.profile{
+    width: 50%;
+    margin: auto;
+}
+.profcontent h4{
+    padding: 20px;
+}

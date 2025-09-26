@@ -1,0 +1,88 @@
+{
+  "userlist": [
+    {
+      "id": "201",
+      "name": "Arun",
+      "email": "arun@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "202",
+      "name": "Adithya",
+      "email": "adhi@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "203",
+      "name": "Asal",
+      "email": "asal@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "204",
+      "name": "Bharath",
+      "email": "bharath@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "205",
+      "name": "Bharani",
+      "email": "bharani@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "206",
+      "name": "chinarasu",
+      "email": "chinna@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "207",
+      "name": "Dulquer",
+      "email": "dulquer@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "208",
+      "name": "Elango",
+      "email": "elango123@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "209",
+      "name": "Franklin",
+      "email": "frank@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "210",
+      "name": "Gopal",
+      "email": "gopzs@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "211",
+      "name": "Hasini",
+      "email": "hasini@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    },
+    {
+      "id": "212",
+      "name": "Indiradevi",
+      "email": "indra@gmail.com",
+      "phone": "9876543210",
+      "password": "Arun@1234"
+    }
+  ]
+}

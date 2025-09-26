@@ -1,0 +1,32 @@
+.partcontainer{
+    text-align: center;
+    padding: 20px;
+}
+.partcontent{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.partners{
+    margin: 20px;
+}
+.partners img{
+    width: 100%;
+}
+@media (max-width:980px){
+    .partcontent{
+        padding: 10px;
+    }
+}
+@media (max-width:780px){
+    .partcontent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:420px){
+    .partcontent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
