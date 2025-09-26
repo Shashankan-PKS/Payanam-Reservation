@@ -1,9 +1,9 @@
 import './App.css'
 import logo from './assets/logo.png'
-import Faq from './faq/faq'
-import Footer from './footer/Footer'
-import Partners from './partners/Partners'
-import Services from './services/Services'
+import Faq from './faq/Faq.jsx'
+import Footer from './footer/Footer.jsx'
+import Partners from './partners/Partners.jsx'
+import Services from './services/Services.jsx'
 import AppBar from "@mui/material/AppBar"
 import Typography  from "@mui/material/Typography"
 import ToolBar  from "@mui/material/Toolbar"
